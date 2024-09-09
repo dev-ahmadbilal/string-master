@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/dev-ahmadbilal/string-master/compare/v1.0.0...v1.0.1) (2024-09-09)
+
+
+### Bug Fixes
+
+* add keywords in pkg json ([7f89d99](https://github.com/dev-ahmadbilal/string-master/commit/7f89d9946562868e5d7fbb24533ce89fba195189))
+* update download badg url ([11c2e3b](https://github.com/dev-ahmadbilal/string-master/commit/11c2e3b3e5d9563da3e4daebc877b25d67bfe278))
+
 # 1.0.0 (2024-09-09)
 
 
