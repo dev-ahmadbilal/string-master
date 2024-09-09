@@ -49,6 +49,19 @@ export class ConvertMaster {
   }
 
   /**
+   * Converts a JSON object to a string.
+   *
+   * @example
+   * const jsonString = ConvertMaster.fromJson({ name: 'John' });
+   * console.log(jsonString); // Output: '{"name":"John"}'
+   *
+   * @returns The stringified JSON.
+   */
+  static fromJson(value: object): string {
+    return JSON.stringify(value);
+  }
+
+  /**
    * Converts the value to a JSON object.
    *
    * @example
@@ -69,7 +82,7 @@ export class ConvertMaster {
    * console.log(encoded); // Output: 'SGVsbG8gV29ybGQh'
    */
   static toBase64(input: string): string {
-    return Buffer.from(input).toString('base64');
+    return Buffer.from(input, 'utf8').toString('base64');
   }
 
   /**

@@ -78,7 +78,6 @@ export class InflectionMaster {
    *     inflection.inflect( 'people' 1 ); // === 'person'
    *     inflection.inflect( 'octopuses' 1 ); // === 'octopus'
    *     inflection.inflect( 'Hats' 1 ); // === 'Hat'
-   *     inflection.inflect( 'guys', 1 , 'person' ); // === 'person'
    *     inflection.inflect( 'inches', 1.5 ); // === 'inches'
    *     inflection.inflect( 'person', 2 ); // === 'people'
    *     inflection.inflect( 'octopus', 2 ); // === 'octopuses'
