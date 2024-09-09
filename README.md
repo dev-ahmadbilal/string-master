@@ -633,7 +633,7 @@ I look forward to hearing from you!
 [build-url]:https://github.com/dev-ahmadbilal/string-master/actions/workflows/release.yml
 [npm-img]:https://img.shields.io/npm/v/string-master
 [npm-url]:https://www.npmjs.com/package/string-master
-[download-img]: https://badgen.net/npm/dt/currency-master
+[download-img]: https://badgen.net/npm/dt/string-master
 [issues-img]:https://img.shields.io/github/issues/dev-ahmadbilal/string-master
 [issues-url]:https://github.com/dev-ahmadbilal/string-master/issues
 [codecov-img]:https://codecov.io/gh/dev-ahmadbilal/string-master/branch/main/graph/badge.svg
