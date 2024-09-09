@@ -1,6 +1,6 @@
 {
   "name": "string-master",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A powerful TypeScript library designed to simplify a wide range of string operations and manipulations.",
   "main": "./lib/index.js",
   "files": [
