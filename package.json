@@ -21,11 +21,25 @@
     "url": "git+https://github.com/dev-ahmadbilal/string-master.git"
   },
   "keywords": [
-    "nodejs",
-    "typescript",
-    "javascript",
-    "npm-package",
-    "open-source"
+    "JavaScript",
+    "TypeScript",
+    "string-manipulation",
+    "data-conversion",
+    "string-handling",
+    "string-utilities",
+    "validation",
+    "data-obfuscation",
+    "sanitization",
+    "compression",
+    "similarity",
+    "inflection",
+    "case-conversion",
+    "slugify",
+    "templating",
+    "masking",
+    "formatting",
+    "text-processing",
+    "npm"
   ],
   "author": {
     "name": "Ahmad Bilal",
