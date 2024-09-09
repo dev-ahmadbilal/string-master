@@ -1,16 +1,16 @@
 /**
- * ManipulateMaster class provides various string manipulation utilities
+ * ManipulationMaster class provides various string manipulation utilities
  * such as trimming, collapsing spaces, extracting substrings, and more.
  */
 
 import { Latin_Map } from './utils/latin-map';
 
-export class ManipulateMaster {
+export class ManipulationMaster {
   /**
    * Extracts the string between two given substrings.
    *
    * @example
-   * ManipulateMaster.between('Hello [World]!', '[', ']'); // 'World'
+   * ManipulationMaster.between('Hello [World]!', '[', ']'); // 'World'
    *
    * @param input The full input string.
    * @param left The substring that marks the start of the extraction.
@@ -31,7 +31,7 @@ export class ManipulateMaster {
    * Removes a specific prefix from the start of the string.
    *
    * @example
-   * ManipulateMaster.chompLeft('HelloWorld', 'Hello'); // 'World'
+   * ManipulationMaster.chompLeft('HelloWorld', 'Hello'); // 'World'
    *
    * @param input The input string.
    * @param prefix The prefix to remove.
@@ -45,7 +45,7 @@ export class ManipulateMaster {
    * Removes a specific suffix from the end of the string.
    *
    * @example
-   * ManipulateMaster.chompRight('HelloWorld', 'World'); // 'Hello'
+   * ManipulationMaster.chompRight('HelloWorld', 'World'); // 'Hello'
    *
    * @param input The input string.
    * @param suffix The suffix to remove.
@@ -59,7 +59,7 @@ export class ManipulateMaster {
    * Removes all characters except for letters and numbers.
    *
    * @example
-   * ManipulateMaster.removeNonAlphaNumeric('Hello, World! 123'); // 'HelloWorld123'
+   * ManipulationMaster.removeNonAlphaNumeric('Hello, World! 123'); // 'HelloWorld123'
    *
    * @param input The input string.
    * @returns The string with only alphanumeric characters.
@@ -72,7 +72,7 @@ export class ManipulateMaster {
    * Truncates the string to a specified length and adds an ellipsis if necessary.
    *
    * @example
-   * ManipulateMaster.truncate('This is a long string', 10); // 'This is a...'
+   * ManipulationMaster.truncate('This is a long string', 10); // 'This is a...'
    *
    * @param input The input string.
    * @param length The maximum length of the string.
@@ -86,7 +86,7 @@ export class ManipulateMaster {
    * Replaces all occurrences of a target string with another string.
    *
    * @example
-   * ManipulateMaster.replaceAll('foo bar foo', 'foo', 'baz'); // 'baz bar baz'
+   * ManipulationMaster.replaceAll('foo bar foo', 'foo', 'baz'); // 'baz bar baz'
    *
    * @param input The input string.
    * @param target The string to be replaced.
@@ -101,7 +101,7 @@ export class ManipulateMaster {
    * Reverses the string.
    *
    * @example
-   * ManipulateMaster.reverse('abc'); // 'cba'
+   * ManipulationMaster.reverse('abc'); // 'cba'
    *
    * @param input The input string.
    * @returns The reversed string.
@@ -114,37 +114,37 @@ export class ManipulateMaster {
    * Extracts the first N characters, or the last N characters if N is negative.
    *
    * @example
-   * ManipulateMaster.getLeft('HelloWorld', 5); // 'Hello'
-   * ManipulateMaster.getLeft('HelloWorld', -5); // 'World'
+   * ManipulationMaster.getLeft('HelloWorld', 5); // 'Hello'
+   * ManipulationMaster.getLeft('HelloWorld', -5); // 'World'
    *
    * @param input The input string.
    * @param N The number of characters to extract.
    * @returns The extracted string.
    */
   static getLeft(input: string, N: number): string {
-    return N >= 0 ? input.substr(0, N) : ManipulateMaster.getRight(input, -N);
+    return N >= 0 ? input.substr(0, N) : ManipulationMaster.getRight(input, -N);
   }
 
   /**
    * Extracts the last N characters, or the first N if N is negative.
    *
    * @example
-   * ManipulateMaster.getRight('HelloWorld', 5); // 'World'
-   * ManipulateMaster.getRight('HelloWorld', -5); // 'Hello'
+   * ManipulationMaster.getRight('HelloWorld', 5); // 'World'
+   * ManipulationMaster.getRight('HelloWorld', -5); // 'Hello'
    *
    * @param input The input string.
    * @param N The number of characters to extract.
    * @returns The extracted string.
    */
   static getRight(input: string, N: number): string {
-    return N >= 0 ? input.substr(input.length - N, N) : ManipulateMaster.getLeft(input, -N);
+    return N >= 0 ? input.substr(input.length - N, N) : ManipulationMaster.getLeft(input, -N);
   }
 
   /**
    * Removes all occurrences of specified characters.
    *
    * @example
-   * ManipulateMaster.removeAll('Hello World', ' ', 'l'); // 'HeoWord'
+   * ManipulationMaster.removeAll('Hello World', ' ', 'l'); // 'HeoWord'
    *
    * @param input The input string.
    * @param chars The characters to remove.
@@ -160,7 +160,7 @@ export class ManipulateMaster {
 
   /**
    * Converts a string into an array of lines, normalizing newlines (Windows to Unix).
-   * @example ManipulateMaster.lines('Hello\r\nWorld\r\n!'); // ['Hello', 'World', '!']
+   * @example ManipulationMaster.lines('Hello\r\nWorld\r\n!'); // ['Hello', 'World', '!']
    */
   static lines(input: string): string[] {
     return input.replace(/\r\n/g, '\n').split('\n');
@@ -168,7 +168,7 @@ export class ManipulateMaster {
 
   /**
    * Removes punctuation from the string.
-   * @example ManipulateMaster.stripPunctuation('Hello, world!'); // 'Hello world'
+   * @example ManipulationMaster.stripPunctuation('Hello, world!'); // 'Hello world'
    */
   static stripPunctuation(input: string): string {
     return input.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ');
@@ -195,7 +195,7 @@ export class ManipulateMaster {
    *
    * @returns A new string with non-Latin characters replaced.
    * @example
-   * const result = ManipulateMaster.latinise("Olá, mundo!"); // "Ola, mundo!"
+   * const result = ManipulationMaster.latinise("Olá, mundo!"); // "Ola, mundo!"
    */
   static latinise(input: string): string {
     // eslint-disable-next-line no-useless-escape

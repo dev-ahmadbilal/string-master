@@ -1,9 +1,9 @@
-export class TrimMaster {
+export class TrimmingMaster {
   /**
    * Removes specified characters from the start of the string, or whitespace if none is specified.
    *
    * @example
-   * TrimMaster.trimStart('   Hello', ' '); // 'Hello'
+   * TrimmingMaster.trimStart('   Hello', ' '); // 'Hello'
    *
    * @param input The input string.
    * @param chars Optional characters to trim. Defaults to whitespace.
@@ -18,7 +18,7 @@ export class TrimMaster {
    * Removes specified characters from the end of the string, or whitespace if none is specified.
    *
    * @example
-   * TrimMaster.trimEnd('Hello   ', ' '); // 'Hello'
+   * TrimmingMaster.trimEnd('Hello   ', ' '); // 'Hello'
    *
    * @param input The input string.
    * @param chars Optional characters to trim. Defaults to whitespace.
@@ -33,7 +33,7 @@ export class TrimMaster {
    * Collapses multiple spaces into a single space.
    *
    * @example
-   * TrimMaster.collapseWhitespace('Hello   World! '); // 'Hello World!'
+   * TrimmingMaster.collapseWhitespace('Hello   World! '); // 'Hello World!'
    *
    * @param input The input string.
    * @returns The string with collapsed whitespace.

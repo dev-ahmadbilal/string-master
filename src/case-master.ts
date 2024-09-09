@@ -1,104 +1,104 @@
 /**
- * CaseMaster class provides methods for converting strings
+ * CasingMaster class provides methods for converting strings
  * between different case formats such as camelCase, snake_case, PascalCase, etc.
  */
-export class CaseMaster {
+export class CasingMaster {
   /**
    * Converts the input string to camelCase.
    *
    * @example
-   * CaseMaster.toCamelCase('hello world'); // 'helloWorld'
+   * CasingMaster.toCamelCase('hello world'); // 'helloWorld'
    *
    * @param input The string to be converted.
    * @returns The string in camelCase format.
    */
   static toCamelCase(input: string): string {
-    return CaseMaster.convertCase(input, 'camel');
+    return CasingMaster.convertCase(input, 'camel');
   }
 
   /**
    * Converts the input string to snake_case.
    *
    * @example
-   * CaseMaster.toSnakeCase('hello world'); // 'hello_world'
+   * CasingMaster.toSnakeCase('hello world'); // 'hello_world'
    *
    * @param input The string to be converted.
    * @returns The string in snake_case format.
    */
   static toSnakeCase(input: string): string {
-    return CaseMaster.convertCase(input, 'snake');
+    return CasingMaster.convertCase(input, 'snake');
   }
 
   /**
    * Converts the input string to PascalCase.
    *
    * @example
-   * CaseMaster.toPascalCase('hello world'); // 'HelloWorld'
+   * CasingMaster.toPascalCase('hello world'); // 'HelloWorld'
    *
    * @param input The string to be converted.
    * @returns The string in PascalCase format.
    */
   static toPascalCase(input: string): string {
-    return CaseMaster.convertCase(input, 'pascal');
+    return CasingMaster.convertCase(input, 'pascal');
   }
 
   /**
    * Converts the input string to kebab-case.
    *
    * @example
-   * CaseMaster.toKebabCase('hello world'); // 'hello-world'
+   * CasingMaster.toKebabCase('hello world'); // 'hello-world'
    *
    * @param input The string to be converted.
    * @returns The string in kebab-case format.
    */
   static toKebabCase(input: string): string {
-    return CaseMaster.convertCase(input, 'kebab');
+    return CasingMaster.convertCase(input, 'kebab');
   }
 
   /**
    * Converts the input string to SCREAMING_SNAKE_CASE.
    *
    * @example
-   * CaseMaster.toScreamingSnakeCase('hello world'); // 'HELLO_WORLD'
+   * CasingMaster.toScreamingSnakeCase('hello world'); // 'HELLO_WORLD'
    *
    * @param input The string to be converted.
    * @returns The string in SCREAMING_SNAKE_CASE format.
    */
   static toScreamingSnakeCase(input: string): string {
-    return CaseMaster.convertCase(input, 'screaming-snake');
+    return CasingMaster.convertCase(input, 'screaming-snake');
   }
 
   /**
    * Converts the input string to Sentence case.
    *
    * @example
-   * CaseMaster.toSentenceCase('HELLO WORLD'); // 'Hello world'
+   * CasingMaster.toSentenceCase('HELLO WORLD'); // 'Hello world'
    *
    * @param input The string to be converted.
    * @returns The string in Sentence case format.
    */
   static toSentenceCase(input: string): string {
-    return CaseMaster.convertCase(input, 'sentence');
+    return CasingMaster.convertCase(input, 'sentence');
   }
 
   /**
    * Converts the input string to Title Case.
    *
    * @example
-   * CaseMaster.toTitleCase('hello world'); // 'Hello World'
+   * CasingMaster.toTitleCase('hello world'); // 'Hello World'
    *
    * @param input The string to be converted.
    * @returns The string in Title Case format.
    */
   static toTitleCase(input: string): string {
-    return CaseMaster.convertCase(input, 'title');
+    return CasingMaster.convertCase(input, 'title');
   }
 
   /**
    * Smart case converter that allows converting to a target case format.
    *
    * @example
-   * CaseMaster.smartCaseConvert('hello world', 'pascal'); // 'HelloWorld'
+   * CasingMaster.smartCaseConvert('hello world', 'pascal'); // 'HelloWorld'
    *
    * @param input The string to be converted.
    * @param targetCase The case format to convert to.
@@ -108,7 +108,7 @@ export class CaseMaster {
     input: string,
     targetCase: 'camel' | 'snake' | 'pascal' | 'kebab' | 'screaming-snake' | 'sentence' | 'title',
   ): string {
-    return CaseMaster.convertCase(input, targetCase);
+    return CasingMaster.convertCase(input, targetCase);
   }
 
   /**
@@ -126,19 +126,19 @@ export class CaseMaster {
 
     switch (targetCase) {
       case 'camel':
-        return CaseMaster.toCamelCaseHelper(input);
+        return CasingMaster.toCamelCaseHelper(input);
       case 'snake':
-        return CaseMaster.toSnakeCaseHelper(input);
+        return CasingMaster.toSnakeCaseHelper(input);
       case 'pascal':
-        return CaseMaster.toPascalCaseHelper(input);
+        return CasingMaster.toPascalCaseHelper(input);
       case 'kebab':
-        return CaseMaster.toKebabCaseHelper(input);
+        return CasingMaster.toKebabCaseHelper(input);
       case 'screaming-snake':
-        return CaseMaster.toScreamingSnakeCaseHelper(input);
+        return CasingMaster.toScreamingSnakeCaseHelper(input);
       case 'sentence':
-        return CaseMaster.toSentenceCaseHelper(input);
+        return CasingMaster.toSentenceCaseHelper(input);
       case 'title':
-        return CaseMaster.toTitleCaseHelper(input);
+        return CasingMaster.toTitleCaseHelper(input);
       default:
         return input;
     }

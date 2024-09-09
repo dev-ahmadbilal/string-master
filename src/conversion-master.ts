@@ -1,16 +1,16 @@
 /**
- * ConvertMaster class provides methods for converting strings and values
+ * ConversionMaster class provides methods for converting strings and values
  * into different types such as boolean, float, integer, etc.
  */
-export class ConvertMaster {
+export class ConversionMaster {
   /**
    * Converts the value to a boolean.
    *
    * @example
-   * new ConvertMaster('yes').toBoolean(); // true
-   * new ConvertMaster('on').toBoolean(); // true
-   * new ConvertMaster('0').toBoolean();   // false
-   * new ConvertMaster('true').toBoolean();  // true
+   * new ConversionMaster('yes').toBoolean(); // true
+   * new ConversionMaster('on').toBoolean(); // true
+   * new ConversionMaster('0').toBoolean();   // false
+   * new ConversionMaster('true').toBoolean();  // true
    *
    * @returns A boolean representation of the value.
    */
@@ -23,8 +23,8 @@ export class ConvertMaster {
    * Converts the value to a floating-point number with optional precision.
    *
    * @example
-   * new ConvertMaster('123.456').toFloat(2); // 123.46
-   * new ConvertMaster('123.456').toFloat();  // 123.456
+   * new ConversionMaster('123.456').toFloat(2); // 123.46
+   * new ConversionMaster('123.456').toFloat();  // 123.456
    *
    * @param precision The number of decimal places to round to (optional).
    * @returns A floating-point number.
@@ -38,8 +38,8 @@ export class ConvertMaster {
    * Converts the value to an integer.
    *
    * @example
-   * new ConvertMaster('42').toInt();   // 42
-   * new ConvertMaster('0x1A').toInt(); // 26 (hexadecimal)
+   * new ConversionMaster('42').toInt();   // 42
+   * new ConversionMaster('0x1A').toInt(); // 26 (hexadecimal)
    *
    * @returns An integer representation of the value.
    */
@@ -52,7 +52,7 @@ export class ConvertMaster {
    * Converts a JSON object to a string.
    *
    * @example
-   * const jsonString = ConvertMaster.fromJson({ name: 'John' });
+   * const jsonString = ConversionMaster.fromJson({ name: 'John' });
    * console.log(jsonString); // Output: '{"name":"John"}'
    *
    * @returns The stringified JSON.
@@ -65,7 +65,7 @@ export class ConvertMaster {
    * Converts the value to a JSON object.
    *
    * @example
-   * new ConvertMaster('{"name": "John"}').toJson(); // { name: 'John' }
+   * new ConversionMaster('{"name": "John"}').toJson(); // { name: 'John' }
    *
    * @returns The parsed JSON object.
    */
