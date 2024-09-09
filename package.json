@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-ahmadbilal/npm-pkg-boilerplate.git"
+    "url": "git+https://github.com/dev-ahmadbilal/string-master.git"
   },
   "keywords": [
     "nodejs",
@@ -34,9 +34,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dev-ahmadbilal/npm-pkg-boilerplate/issues"
+    "url": "https://github.com/dev-ahmadbilal/string-master/issues"
   },
-  "homepage": "https://github.com/dev-ahmadbilal/npm-pkg-boilerplate#readme",
+  "homepage": "https://github.com/dev-ahmadbilal/string-master#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^19.4.1",
     "@eslint/js": "^9.9.1",
