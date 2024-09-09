@@ -1,6 +1,6 @@
 {
   "name": "npm-pkg-boilerplate",
-  "version": "0.0.x",
+  "version": "0.0.1",
   "description": "A boilerplate project for npm packages",
   "main": "./lib/index.js",
   "files": [
