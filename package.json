@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "A powerful TypeScript library designed to simplify a wide range of string operations and manipulations.",
   "main": "./lib/index.js",
-  "release": { "branches": [ "main" ] },
   "files": [
     "lib/**/*"
   ],
