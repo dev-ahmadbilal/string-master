@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dev-ahmadbilal/string-master/compare/v1.0.1...v1.0.2) (2024-09-23)
+
+
+### Bug Fixes
+
+* remove compression master ([cf510d2](https://github.com/dev-ahmadbilal/string-master/commit/cf510d2eb13acb3883c76e2fa58e813b8b25b736))
+
 ## [1.0.1](https://github.com/dev-ahmadbilal/string-master/compare/v1.0.0...v1.0.1) (2024-09-09)
 
 
