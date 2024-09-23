@@ -1,6 +1,5 @@
 import {
   CasingMaster,
-  CompressionMaster,
   ConversionMaster,
   EmojiMaster,
   EntropyMaster,
@@ -21,12 +20,6 @@ import {
 describe('CasingMaster', () => {
   it('should be defined', () => {
     expect(CasingMaster).toBeDefined();
-  });
-});
-
-describe('CompressionMaster', () => {
-  it('should be defined', () => {
-    expect(CompressionMaster).toBeDefined();
   });
 });
 

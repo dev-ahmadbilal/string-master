@@ -1,5 +1,4 @@
 export { CasingMaster } from './case-master';
-export { CompressionMaster } from './compression-master';
 export { ConversionMaster } from './conversion-master';
 export { EmojiMaster } from './emoji-master';
 export { EntropyMaster } from './entropy-master';

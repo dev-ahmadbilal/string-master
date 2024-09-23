@@ -38,35 +38,6 @@ export class MaskingMaster {
    * const maskedSSN = MaskingMaster.maskSSN('123-45-6789');
    * console.log(maskedSSN); // Output: '***-**-6789'
    */
-  // static maskSSN(input: string): string {
-  //   const length = input.length;
-  //   const visibleLength = 4;
-
-  //   if (length <= visibleLength) {
-  //     // If the length is less than or equal to the visible length, no masking is needed.
-  //     return input;
-  //   }
-
-  //   // Mask all characters except the last `visibleLength` characters.
-  //   const maskedPart = '*'.repeat(length - visibleLength);
-
-  //   // Determine the number of characters in the masked part that should be preserved
-  //   let result = '';
-
-  //   for (let i = 0; i < length; i++) {
-  //     if (i < maskedPart.length) {
-  //       if (input[i] === '-' || input[i] === ' ') {
-  //         result += input[i]; // Preserve delimiters
-  //       } else {
-  //         result += '*'; // Mask other characters
-  //       }
-  //     } else {
-  //       result += input[i]; // Add visible part
-  //     }
-  //   }
-
-  //   return result;
-  // }
   static maskSSN(input: string): string {
     const length = input.length;
     const visibleLength = 4;
