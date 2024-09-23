@@ -15,7 +15,6 @@
 - [Usage](#2-usage)
   - [CasingMaster](#1-CasingMaster): Convert strings to various cases, like Camel Case, Snake Case, and more.
   - [ConversionMaster](#2-ConversionMaster): Convert strings between different types, such as hexadecimal, integers, or float.
-  - [CompressionMaster](#3-compressionmaster): Compress and decompress strings.
   - [EmojiMaster](#4-emojimaster): Manipulate, find, or replace emojis in strings.
   - [EntropyMaster](#5-entropymaster): Calculate the entropy of a string for cryptographic analysis.
   - [FrequencyMaster](#6-frequencymaster): Analyze the frequency of characters or words in strings.
@@ -88,19 +87,7 @@ console.log(ConversionMaster.toHex('Hello')); // '48656c6c6f'
 console.log(ConversionMaster.fromHex('48656c6c6f')); // 'Hello'
 ```
 
-### 3. CompressionMaster
-The CompressionMaster class handles string compression and decompression.
-```ts
-import { CompressionMaster } from 'string-master';
-
-const compressed = CompressionMaster.compress('Hello, world!');
-console.log(compressed); // Compressed string (e.g., "〶惶̀Ў㦀☄∀")
-
-const decompressed = CompressionMaster.decompress(compressed);
-console.log(decompressed); // 'Hello, world!'
-```
-
-### 4. EmojiMaster
+### 3. EmojiMaster
 The EmojiMaster class helps find, replace, or manipulate emojis in strings.
 ```ts
 import { EmojiMaster } from 'string-master';
@@ -115,7 +102,7 @@ const modifiedTextWithEmojis = EmojiMaster.replaceWordsWithEmojis('I am very hap
 console.log(modifiedTextWithEmojis); // 'I am very 😊 and a bit 😢.'
 ```
 
-### 5. EntropyMaster
+### 4. EntropyMaster
 The EntropyMaster class calculates the entropy of a string, useful for cryptography or information theory.
 ```ts
 import { EntropyMaster } from 'string-master';
@@ -124,7 +111,7 @@ console.log(EntropyMaster.calculateEntropy('password123')); // 3.27
 console.log(EntropyMaster.getStrength('password123')); // 'Moderate'
 ```
 
-### 6. FrequencyMaster
+### 5. FrequencyMaster
 The FrequencyMaster class analyzes the frequency of characters or words in a string.
 ```ts
 import { FrequencyMaster } from 'string-master';
@@ -137,7 +124,7 @@ console.log(FrequencyMaster.findMostFrequentWords(text, 1)); // [{ word: "hello"
 console.log(FrequencyMaster.findLeastFrequentWords(text, 1)); // [{ word: "world", count: 1 }]
 console.log(FrequencyMaster.getTopNCharacters(text, 2)); // [{ character: "l", count: 5 }, { character: "o", count: 3 }]
 ```
-### 7. InflectionMaster
+### 6. InflectionMaster
 The InflectionMaster class handles pluralization and singularization of words.
 
 Examples:
@@ -190,7 +177,7 @@ const inflectHat2 = InflectionMaster.inflect('Hat', 2);
 console.log(inflectHat2); // 'Hats'
 ```
 
-### 8. InitialsMaster
+### 7. InitialsMaster
 The InitialsMaster class extracts initials from a string.
 
 Examples:
@@ -265,7 +252,7 @@ console.log(customAcronym); // 'I'
 
 ```
 
-### 9. ManipulationMaster
+### 8. ManipulationMaster
 The ManipulationMaster class provides methods to perform various manipulations on strings, like reversing or shuffling.
 
 Examples:
@@ -336,7 +323,7 @@ const ordinalizeResult = ManipulationMaster.ordinalize('the 1 pitch and 22 jumps
 console.log(ordinalizeResult); // 'the 1st pitch and 22nd jumps'
 ```
 
-### 10. MaskingMaster
+### 9. MaskingMaster
 The MaskingMaster class masks parts of a string, such as credit card numbers or emails.
 
 Examples:
@@ -359,7 +346,7 @@ console.log(maskedSSN); // '***-**-6789'
 const maskedString = MaskingMaster.maskString('SensitiveData', 2, 2);
 console.log(maskedString); // 'Se********ta'
 ```
-### 11. ObfuscationMaster
+### 10. ObfuscationMaster
 The ObfuscationMaster class obfuscates and deobfuscates strings for privacy or security purposes.
 
 Examples:
@@ -383,7 +370,7 @@ console.log(obfuscatedXOR); // .''$k$9'/
 const original = ObfuscationMaster.deobfuscateXOR(obfuscatedXOR, 'K');
 console.log(original); // "Hello World"
 ```
-### 12. SanitizationMaster
+### 11. SanitizationMaster
 The SanitizationMaster class provides methods to sanitize strings, removing unwanted characters or formatting.
 
 Examples:
@@ -404,7 +391,7 @@ const sanitizedString = SanitizationMaster.sanitizeForDisplay('<div>Hello\u0001W
 console.log(sanitizedString); // "&lt;div&gt;HelloWorld&lt;/div&gt;"
 ```
 
-### 13. SearchMaster
+### 12. SearchMaster
 The SearchMaster class provides methods for searching within strings, including fuzzy search and proximity search.
 
 Examples:
@@ -445,7 +432,7 @@ const highlighted = SearchMaster.highlight('Hello, world!', 'world');
 console.log(highlighted); // 'Hello, <mark>world</mark>!'
 
 ```
-### 14. SimilarityMaster
+### 13. SimilarityMaster
 The SimilarityMaster class calculates the similarity between two strings using various algorithms like Jaccard, Levenshtein, and Jaro-Winkler.
 
 Examples:
@@ -490,7 +477,7 @@ console.log(comparison.bestMatch); // { target: 'apples', rating: 0.8 }
 console.log(comparison.bestMatchIndex); // 0
 ```
 
-### 15. SlugMaster
+### 14. SlugMaster
 The SlugMaster class converts strings to URL-friendly slugs.
 
 Examples:
@@ -515,7 +502,7 @@ const slugWithRules = SlugMaster.slugify('Rock and Roll');
 console.log(slugWithRules); // "rock-n-roll"
 ```
 
-### 16. TemplateMaster
+### 15. TemplateMaster
 The TemplateMaster class allows for simple templating and string interpolation.
 
 Examples:
@@ -541,7 +528,7 @@ const result4 = templateFunc({ name: 'John' });
 console.log(result4); // "Hello, John!"
 ```
 
-### 17. TrimmingMaster
+### 16. TrimmingMaster
 The TrimmingMaster class provides various methods for trimming whitespace or characters from strings.
 
 Examples:
@@ -562,7 +549,7 @@ const result3 = TrimmingMaster.collapseWhitespace('Hello   World! ');
 console.log(result3); // 'Hello World!'
 ```
 
-### 18. ValidationMaster
+### 17. ValidationMaster
 The ValidationMaster class validates strings against different rules, such as email or URL formats.
 
 Examples:
